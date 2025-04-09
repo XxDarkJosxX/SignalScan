@@ -1407,5 +1407,13 @@ a {
     padding: 330px 42px 20px 20px !important;
     text-align: center;
   }
+
+
+  .list .item:nth-child(1) .content .des, .list .item:nth-child(2) .content .des {
+    font-size: 16px;
+    opacity: 1;
+    display: block;
+    width: 100%;
+}
   
 }
