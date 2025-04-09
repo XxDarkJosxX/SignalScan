@@ -1,11 +1,12 @@
 (function ($) {
-	
-	"use strict";
 
-	// Header Type = Fixed
+  "use strict";
+
+
+
+  // Animación del fondo del header cuando se hace scroll
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    var box = $('.header-text').height();
     var header = $('header').height();
 
     if (scroll >= 1000 - header) {
@@ -15,88 +16,74 @@
     }
   });
 
-
-	$('.loop').owlCarousel({
-      center: true,
-      items:1,
-      loop:true,
-      autoplay: true,
-      nav: true,
-      margin:0,
-      responsive:{ 
-          1200:{
-              items:5
-          },
-          992:{
-              items:3
-          },
-          760:{
-            items:2
-        }
+  // Inicialización de OwlCarousel
+  $('.loop').owlCarousel({
+    center: true,
+    items: 1,
+    loop: true,
+    autoplay: true,
+    nav: true,
+    margin: 0,
+    responsive: {
+      1200: {
+        items: 5
+      },
+      992: {
+        items: 3
+      },
+      760: {
+        items: 2
       }
+    }
   });
-  
+
+  // Modal de Lean Modal
   $("#modal_trigger").leanModal({
-		top: 100,
-		overlay: 0.6,
-		closeButton: ".modal_close"
-});
+    top: 100,
+    overlay: 0.6,
+    closeButton: ".modal_close"
+  });
 
-$(function() {
-		// Calling Login Form
-		$("#login_form").click(function() {
-				$(".social_login").hide();
-				$(".user_login").show();
-				return false;
-		});
+  // Llamar al formulario de login
+  $("#login_form").click(function() {
+    $(".social_login").hide();
+    $(".user_login").show();
+    return false;
+  });
 
-		// Calling Register Form
-		$("#register_form").click(function() {
-				$(".social_login").hide();
-				$(".user_register").show();
-				$(".header_title").text('Register');
-				return false;
-		});
+  // Llamar al formulario de registro
+  $("#register_form").click(function() {
+    $(".social_login").hide();
+    $(".user_register").show();
+    $(".header_title").text('Register');
+    return false;
+  });
 
-		// Going back to Social Forms
-		$(".back_btn").click(function() {
-				$(".user_login").hide();
-				$(".user_register").hide();
-				$(".social_login").show();
-				$(".header_title").text('Login');
-				return false;
-		});
-});
+  // Volver a la pantalla social
+  $(".back_btn").click(function() {
+    $(".user_login").hide();
+    $(".user_register").hide();
+    $(".social_login").show();
+    $(".header_title").text('Login');
+    return false;
+  });
 
-  // Acc
+  // Accionamiento de la navegación
   $(document).on("click", ".naccs .menu div", function() {
     var numberIndex = $(this).index();
-
     if (!$(this).is("active")) {
-        $(".naccs .menu div").removeClass("active");
-        $(".naccs ul li").removeClass("active");
+      $(".naccs .menu div").removeClass("active");
+      $(".naccs ul li").removeClass("active");
 
-        $(this).addClass("active");
-        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+      $(this).addClass("active");
+      $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
 
-        var listItemHeight = $(".naccs ul")
-          .find("li:eq(" + numberIndex + ")")
-          .innerHeight();
-        $(".naccs ul").height(listItemHeight + "px");
-      }
+      var listItemHeight = $(".naccs ul").find("li:eq(" + numberIndex + ")").innerHeight();
+      $(".naccs ul").height(listItemHeight + "px");
+    }
   });
-	
 
-	// Menu Dropdown Toggle
-  if($('.menu-trigger').length){
-    $(".menu-trigger").on('click', function() { 
-      $(this).toggleClass('active');
-      $('.header-area .nav').slideToggle(200);
-    });
-  }
-
-
-  // Menu elevator animation
+  // Animación de desplazamiento suave
   $('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -115,76 +102,29 @@ $(function() {
     }
   });
 
-  $(document).ready(function () {
-      $(document).on("scroll", onScroll);
-      
-      //smoothscroll
-      $('.scroll-to-section a[href^="#"]').on('click', function (e) {
-          e.preventDefault();
-          $(document).off("scroll");
-          
-          $('.scroll-to-section a').each(function () {
-              $(this).removeClass('active');
-          })
-          $(this).addClass('active');
-        
-          var target = this.hash,
-          menu = target;
-          var target = $(this.hash);
-          $('html, body').stop().animate({
-              scrollTop: (target.offset().top) + 1
-          }, 500, 'swing', function () {
-              window.location.hash = target;
-              $(document).on("scroll", onScroll);
-          });
-      });
-  });
-
-  function onScroll(event){
-      var scrollPos = $(document).scrollTop();
-      $('.nav a').each(function () {
-          var currLink = $(this);
-          var refElement = $(currLink.attr("href"));
-          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-              $('.nav ul li a').removeClass("active");
-              currLink.addClass("active");
-          }
-          else{
-              currLink.removeClass("active");
-          }
-      });
-  }
-
-
-  // Acc
-  $(document).on("click", ".naccs .menu div", function() {
-    var numberIndex = $(this).index();
-
-    if (!$(this).is("active")) {
-        $(".naccs .menu div").removeClass("active");
-        $(".naccs ul li").removeClass("active");
-
-        $(this).addClass("active");
-        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
-
-        var listItemHeight = $(".naccs ul")
-          .find("li:eq(" + numberIndex + ")")
-          .innerHeight();
-        $(".naccs ul").height(listItemHeight + "px");
+  // Configuración del observador de intersección para animaciones
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');  // Añadir clase de animación
+      } else {
+        entry.target.classList.remove('animate');  // Eliminar clase de animación
       }
+    });
+  }, { threshold: 0.5 });  // Umbral de 50% para activar la animación
+
+  // Selección de elementos a observar para las animaciones
+  const animatedElements = document.querySelectorAll('.elemento-animado');
+  animatedElements.forEach(element => {
+    observer.observe(element);
   });
 
+  // Animación de carga de página
+  $(window).on('load', function() {
+    $('#js-preloader').addClass('loaded');
+  });
 
-	// Page loading animation
-	 $(window).on('load', function() {
-
-        $('#js-preloader').addClass('loaded');
-
-    });
-
-	
-
-	// Window Resize Mobile Menu Fix
+  // Corrección de navegación móvil en el menú
   function mobileNav() {
     var width = $(window).width();
     $('.submenu').on('click', function() {
@@ -195,10 +135,9 @@ $(function() {
     });
   }
 
-
-
-  
-
-
+  // Recalcular Owl Carousel cuando la ventana se redimensione
+  $(window).on('resize', function() {
+    $(".owl-carousel").trigger('refresh.owl.carousel');
+  });
 
 })(window.jQuery);
