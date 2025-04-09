@@ -1333,3 +1333,10 @@ a {
     padding: 0px 30px 0px 40px !important;
   }
 }
+
+
+@media only screen and (max-width: 700px) {
+  .containercontent {
+    padding: 0px 0px 0px 0px !important;
+  }
+}
