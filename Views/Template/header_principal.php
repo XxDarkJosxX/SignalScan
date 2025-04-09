@@ -50,6 +50,12 @@ https://templatemo.com/tm-570-chain-app-dev
 
 
     <link rel="preload" href="Assets/img/banerslargos (14).png" as="image">
+
+    <script>
+    if (navigator.userAgent.includes("Chrome") && !navigator.userAgent.includes("Edg") && !navigator.userAgent.includes("OPR")) {
+      document.documentElement.style.zoom = "0.55"; /* Ajuste solo en Chrome */
+    }
+  </script>
   </head>
 
   <body>

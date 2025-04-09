@@ -159,9 +159,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  if (navigator.userAgent.includes("Chrome") && !navigator.userAgent.includes("Edg") && !navigator.userAgent.includes("OPR")) {
-    document.body.style.zoom = "0.65"; /* Ajuste solo en Chrome */
-}
-
+  
 
 });
