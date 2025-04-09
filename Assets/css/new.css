@@ -1506,5 +1506,11 @@ a {
     transition: all 0s;
   }
 
+  .align-self-center{
+    /* Cambios */
+    margin-top: 35px;
+    padding-left: 0%;
+    padding-right: 0% !important;
+  }
   
 }
