@@ -33,7 +33,7 @@ nav_principal($data);
                 <ul class="carousel__list">
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (11).png" width="480" height="720" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (11).png" width="480" height="720" loading="eager" /></div>
                       <div class="carousel__contents">
                         <!-- <h2 class="user__name">Anthony Lee</h2> -->
                         <h3 class="user__title">Estudios de Calidad</h3>
@@ -42,7 +42,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (23).png" width="480" height="720" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (23).png" width="480" height="720" loading="eager"/></div>
                       <div class="carousel__contents">
                         <!-- <h2 class="user__name">Alicia Chevalier</h2> -->
                         <h3 class="user__title">Alquiler de equipamiento</h3>
@@ -51,7 +51,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (25).png" width="480" height="720" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (25).png" width="480" height="720" loading="eager"/></div>
                       <div class="carousel__contents">
                         <!-- <h2 class="user__name">Nate Boucher</h2> -->
                         <h3 class="user__title">Capacitación técnica</h3>
@@ -60,7 +60,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (17).png" width="480" height="720" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (17).png" width="480" height="720" loading="eager"/></div>
                       <div class="carousel__contents">
                         <!-- <h2 class="user__name">Leah Harris</h2> -->
                         <h3 class="user__title">Equipos de medición</h3>
@@ -69,7 +69,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0" data-active="data-active">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (12).png" width="480" height="720" /></div><!--  central -->
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (12).png" width="480" height="720" loading="eager"/></div><!--  central -->
                       <div class="carousel__contents">
                         <!-- <h2 class="user__name">Angelina Laurent</h2> -->
                         <h3 class="user__title">Estudios de interferencia</h3>
@@ -78,7 +78,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (26).png" width="480" height="720" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (26).png" width="480" height="720" loading="eager"/></div>
                       <div class="carousel__contents">
                         <!-- <h2 class="user__name">Gal Gadot</h2> -->
                         <h3 class="user__title">Estudios de ocupación</h3>
@@ -87,7 +87,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (14).png" width="480" height="720" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (14).png" width="480" height="720" loading="eager"/></div>
                       <div class="carousel__contents">
                         <!-- <h2 class="user__name">Albert Sørensen</h2> -->
                         <h3 class="user__title">Mediciones de cobertura</h3>
