@@ -19,7 +19,11 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 
-
+    <script>
+    if (navigator.userAgent.includes("Chrome") && !navigator.userAgent.includes("Edg") && !navigator.userAgent.includes("OPR")) {
+      document.documentElement.style.zoom = "0.55"; /* Ajuste solo en Chrome */
+    }
+  </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -40,6 +44,7 @@ https://templatemo.com/tm-570-chain-app-dev
 
 -->
 
+
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="Assets/css/templatemo-chain-app-dev.css?v=<?php echo time(); ?>">
@@ -49,13 +54,9 @@ https://templatemo.com/tm-570-chain-app-dev
     <link rel="stylesheet" href="Assets/css/new.css?v=<?php echo time(); ?>">
 
 
-    <link rel="preload" href="Assets/img/banerslargos (14).png" as="image">
+  
 
-    <script>
-    if (navigator.userAgent.includes("Chrome") && !navigator.userAgent.includes("Edg") && !navigator.userAgent.includes("OPR")) {
-      document.documentElement.style.zoom = "0.55"; /* Ajuste solo en Chrome */
-    }
-  </script>
+    
   </head>
 
   <body>
