@@ -19,11 +19,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 
-    <script>
-    if (navigator.userAgent.includes("Chrome") && !navigator.userAgent.includes("Edg") && !navigator.userAgent.includes("OPR")) {
-      document.documentElement.style.zoom = "0.55"; /* Ajuste solo en Chrome */
-    }
-  </script>
+   
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -53,16 +49,6 @@ https://templatemo.com/tm-570-chain-app-dev
     <link rel="stylesheet" href="Assets/css/nav.css">
     <link rel="stylesheet" href="Assets/css/new.css?v=<?php echo time(); ?>">
 
-
-    <style>
-  /* Aseguramos que el fondo de los modales también sea escalado */
-  .modal-backdrop {
-    transform: scale(5);
-    transform-origin: center center;
-  }
-
-
-</style>
 
     
   </head>
