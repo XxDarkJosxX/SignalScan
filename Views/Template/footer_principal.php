@@ -49,7 +49,7 @@
   <script src="Assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="Assets/js/owl-carousel.js"></script>
   <script src="Assets/js/animation.js"></script>
-  <script src="Assets/js/imagesloaded.js"></script>
+  <!-- <script src="Assets/js/imagesloaded.js"></script> -->
   <script src="Assets/js/popup.js"></script>
   <script src="Assets/js/custom.js"></script>
   <script src="Assets/js/nav.js"></script>
