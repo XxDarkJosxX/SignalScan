@@ -1335,7 +1335,7 @@ a {
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
   .containercontent {
     padding: 0px 0px 0px 0px !important;
   }
@@ -1351,6 +1351,6 @@ a {
   }
 
   .carrini{
-    height: 240px !important;
+    height: 500px;
   }
 }
