@@ -16,7 +16,7 @@ nav_principal($data);
             <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
               <div class="row">
                 <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                  <h4>Soluciones a <em>Medida Para el Sector de las Telecomunicaciones</em> Inalámbricas</h4>
+                  <h4>Solucionessss a <em>Medida Para el Sector de las Telecomunicaciones</em> Inalámbricas</h4>
                   <img src="assets/images/heading-line-dec.png" alt="">
                   <p>Somos alquimistas dominando la magia de transmitir
                     información en forma de energía eléctrica y magnética a través del espacio libre, con <a style="color: #366cbb;">nuestra tecnología y
