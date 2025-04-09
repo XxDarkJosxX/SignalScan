@@ -1339,4 +1339,14 @@ a {
   .containercontent {
     padding: 0px 0px 0px 0px !important;
   }
+  .service-item {
+  
+    padding: 30px 20px 30px 20px;
+  }
+
+  .contactContainer {
+    padding: 0 10px 70px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }

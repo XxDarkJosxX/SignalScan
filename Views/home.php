@@ -193,10 +193,10 @@ nav_principal($data);
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container containercontent">
     <div class="row">
       <div class="col-lg-6 cardservice">
-        <div class="service-item first-service">
+        <div class="service-item first-service ">
           <div class="icon"></div>
           <h4>Medición y Análisis de Redes Inalámbricas</h4>
           <p>Evaluamos la calidad y eficiencia de redes inalámbricas mediante estudios de interferencia, ocupación del espectro, cobertura y Radiación No Ionizante.</p>
