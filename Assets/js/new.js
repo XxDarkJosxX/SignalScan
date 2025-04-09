@@ -3,13 +3,22 @@ document.addEventListener('DOMContentLoaded', function () {
   // Tu código aquí
 
 
-//Productos
+
+
+  //Carrusel
+
+
+
+  //Carrusel
+
+
+  // Select DOM elements
   const nextBtn = document.querySelector(".nextpr");
   const prevBtn = document.querySelector(".prevpr");
   const carousel = document.querySelector(".carouselpr");
   const list = document.querySelector(".list");
   const items = Array.from(document.querySelectorAll(".item"));
-  const runningTimeBar = document.querySelector(".carouselpr .timeRunning");
+  const runningTimeBar = document.querySelector(".carousel .timeRunning");
 
   // Timing configurations
   const TIME_RUNNING = 1500; // Animation duration for the transition
@@ -21,8 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Create and append the progress bar
   const arrowsDiv = document.querySelector(".arrows");
+  const progressBarContainer = document.createElement("div");
+  progressBarContainer.className = "progress-bar-container";
 
 
+
+
+
+  arrowsDiv.appendChild(progressBarContainer);
 
   // Event listeners for navigation buttons
   nextBtn.addEventListener("click", () => handleSliderNavigation("next"));
@@ -43,7 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
   afterSlideChange();
 
   // Resets the running time animation
-
+  function resetAnimation() {
+    runningTimeBar.style.animation = "none"; // Remove current animation
+    runningTimeBar.offsetHeight; // Trigger reflow to restart animation
+    runningTimeBar.style.animation = `runningTime ${TIME_AUTO_NEXT / 1000
+      }s linear forwards`; // Restart animation
+  }
 
   // Handles slider navigation (next/prev)
   function handleSliderNavigation(direction) {
@@ -92,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const sliderItems = Array.from(list.querySelectorAll(".item")); // Get the current visible order of items
     const activeItem = parseInt(sliderItems[0].querySelector(".title").getAttribute("data-item")) + 1; // The first visible item is the active one
 
-    
+    const progressPercentage = (activeItem / totalSlides) * 100; // Calculate progress percentage
 
   }
 
