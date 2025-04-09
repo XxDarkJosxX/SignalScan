@@ -1526,5 +1526,13 @@ a {
   }
 
  
-  
+  [data-active] .carousel__contents * {
+ 
+    transition-duration: 0s;
+
+  }
+
+  .carousel__contents .user__title, .carousel__contents .user__name {
+    transition-duration: 0s;
+  }
 }

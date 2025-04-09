@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   
   const startAuto = () => {
-    auto = setInterval(autoSlide, 3000); // Cambia de slide cada 3 segundos
+    auto = setInterval(autoSlide, 300000); // Cambia de slide cada 3 segundos
   }
   
   startAuto(); // Llama a la función si existe un elemento con la clase "carousel"
