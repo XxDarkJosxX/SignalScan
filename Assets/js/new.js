@@ -158,4 +158,10 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener("resize", actualizarTitulo);
 
 
+
+  if (navigator.userAgent.includes("Chrome") && !navigator.userAgent.includes("Edg") && !navigator.userAgent.includes("OPR")) {
+    document.body.style.zoom = "0.95"; /* Ajuste solo en Chrome */
+}
+
+
 });
