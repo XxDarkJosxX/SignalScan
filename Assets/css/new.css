@@ -1520,5 +1520,9 @@ a {
   .main-banner .left-content p{
     text-align: justify;
   }
+
+  .main-banner .right-image {
+    margin: 20px auto 0px auto;
+  }
   
 }
