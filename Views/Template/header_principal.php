@@ -48,6 +48,8 @@ https://templatemo.com/tm-570-chain-app-dev
     <link rel="stylesheet" href="Assets/css/nav.css">
     <link rel="stylesheet" href="Assets/css/new.css?v=<?php echo time(); ?>">
 
+
+    <link rel="preload" href="Assets/img/banerslargos (14).png" as="image">
   </head>
 
   <body>
