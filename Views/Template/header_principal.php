@@ -42,7 +42,7 @@ https://templatemo.com/tm-570-chain-app-dev
     <link rel="stylesheet" href="Assets/css/animated.css">
     <link rel="stylesheet" href="Assets/css/owl.css">
     <link rel="stylesheet" href="Assets/css/nav.css">
-    <link rel="stylesheet" href="Assets/css/new.css?v=16">
+    <link rel="stylesheet" href="Assets/css/new.css?v=17">
 
   </head>
 
