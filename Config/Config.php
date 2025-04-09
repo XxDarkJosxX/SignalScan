@@ -3,7 +3,7 @@
    date_default_timezone_set('America/La_Paz');
 
    
-    const BASE_URL = "http://localhost/signalScan/";
+    const BASE_URL = "https://nathanpublicidad.com/SignalScan/";
     const DB_HOST = "localhost";
     const DB_NAME = "";
     const DB_USER = "root";
