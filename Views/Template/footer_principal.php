@@ -53,7 +53,7 @@
   <script src="Assets/js/popup.js"></script>
   <script src="Assets/js/custom.js"></script>
   <script src="Assets/js/nav.js"></script>
-  <script src="Assets/js/new.js"></script>
+  <script src="Assets/js/new.js?v=<?php echo time(); ?>"></script>
 
   <script src="Assets/js/functions/<?= $data['page_js'] ?>"></script>
 </body>
