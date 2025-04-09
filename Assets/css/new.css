@@ -470,7 +470,6 @@ ul {
 
 /* Productos Carrusel=================================================== */
 
-/* Productos Carrusel=================================================== */
 :root {
   --height: calc(80vh - 50px);
   --width: 450px;
@@ -478,7 +477,7 @@ ul {
 
 .carousel {
   display: grid;
-  transform: translate3d(0, 0, 0.1px);
+  transform: translate(0, 0);
 }
 
 .carousel__list {
@@ -503,17 +502,28 @@ ul {
   overflow: hidden;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-  transform: translate3d(0, 0, 0.1px);
+  transform: translate(0, 0);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 15px 2px, rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   contain: layout;
   isolation: isolate;
   height: 100%;
-  transition: transform .3s ease, opacity .3s ease; /* Solo animaciones necesarias */
+}
+
+.carousel__item,
+.carousel__item * {
+  transition: all .6s cubic-bezier(.55, .24, .18, 1);
+  user-select: none;
+}
+
+.carousel__image,
+.carousel__contents {
+  width: var(--width);
+  height: auto;
 }
 
 .carousel__item:hover {
   flex-basis: calc(var(--width) / 2);
-  transition: transform .3s ease; /* Reducción de transiciones */
+  transition: all 0.3s ease;
 }
 
 .carousel__item[data-active] {
@@ -524,11 +534,11 @@ ul {
 @media screen and (max-width: 800px) {
   .carousel__item {
     flex-basis: 15%;
-    transition: flex-basis .3s ease; /* Transiciones más rápidas */
   }
 }
 
 @media screen and (max-width: 600px) {
+
   .carousel__item {
     flex-basis: 10%;
     margin: 0 5px;
@@ -540,18 +550,77 @@ ul {
     flex-basis: 45%;
     flex-grow: 0;
   }
-  
+
+  .carousel__item:nth-child(3),
+  .carousel__item:nth-child(7) {
+    flex: 0 0 10px;
+  }
+
+  .carousel__item:nth-child(2),
+  .carousel__item:nth-child(8) {
+    flex: 0 0 5px;
+    transform: translateX(-50px);
+  }
+
+  .carousel__item:nth-child(8) {
+    transform: translateX(50px);
+  }
+
   .carousel__item:nth-child(1),
   .carousel__item:nth-child(n + 9) {
     flex: 0 0 0px;
     margin: 0;
     box-shadow: none;
+    /* opacity: 0!important; */
   }
 
-  .carousel__item img {
+  .carousel__item:not(:nth-child(n + 5)) img,
+  .carousel__item:nth-child(n + 7) img {
     opacity: 0.8;
-    transition: opacity .3s ease; /* Animación más rápida */
   }
+
+  .carousel__item:not(:nth-child(n + 4)) *,
+  .carousel__item:nth-child(n + 7) * {
+    /* opacity: 0!important; */
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+
+  .carousel__item:nth-child(3),
+  .carousel__item:nth-child(10) {
+    flex: 0 0 10px;
+  }
+
+  .carousel__item:nth-child(2),
+  .carousel__item:nth-child(11) {
+    flex: 0 0 5px;
+    transform: translateX(-50px);
+  }
+
+  .carousel__item:nth-child(11) {
+    transform: translateX(50px);
+  }
+
+  .carousel__item:nth-child(1),
+  .carousel__item:nth-child(n + 12) {
+    flex: 0 0 0px;
+    margin: 0;
+    box-shadow: none;
+    /* opacity: 0!important; */
+  }
+
+  .carousel__item:not(:nth-child(n + 5)) img,
+  .carousel__item:nth-child(n + 9) img {
+    opacity: 0.8;
+  }
+
+  .carousel__item:not(:nth-child(n + 4)) *,
+  .carousel__item:nth-child(n + 10) * {
+    /* opacity: 0!important; */
+  }
+
 }
 
 .carousel__item img {
@@ -566,7 +635,6 @@ ul {
   aspect-ratio: 2/3;
   object-fit: cover;
   filter: saturate(0.6);
-  transition: filter .3s ease; /* Animación más rápida */
 }
 
 .carousel__item::after {
@@ -577,7 +645,8 @@ ul {
   height: 100%;
   z-index: 1;
   opacity: 1;
-  transition: transform .66s cubic-bezier(.55, .24, .18, 1);
+  /* background: linear-gradient(to right, #ff94541c 0%, #86652205 50%, #40190914 100%); */
+  transition: all .66s cubic-bezier(.55, .24, .18, 1);
 }
 
 .carousel__item[data-active]::after {
@@ -589,7 +658,6 @@ ul {
   opacity: 1;
   filter: none;
   width: 100%;
-  transition: opacity .3s ease; /* Animación más rápida */
 }
 
 .carousel__contents {
@@ -605,7 +673,6 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  transition: background-position .3s ease, opacity .3s ease;
 }
 
 .carousel__contents .user__name {
@@ -642,6 +709,10 @@ ul {
 }
 
 @media screen and (max-width: 800px) {
+  .carousel__item img {
+    width: calc(var(--width) * .5);
+  }
+
   .carousel__contents {
     transform: translateX(-100%) rotate(90deg);
     transform-origin: bottom right;
@@ -654,7 +725,6 @@ ul {
     bottom: 0;
     left: 0;
     text-align: right;
-    transition: transform .3s ease; /* Animación más rápida */
   }
 
   [data-active] .carousel__contents {
@@ -683,6 +753,7 @@ ul {
   transition-delay: 0.05s;
 }
 
+
 .carousel__nav {
   padding: 1em;
   justify-self: end;
@@ -695,6 +766,7 @@ ul {
 button {
   display: flex;
   gap: .5em;
+  /* padding: 0.5em 1.5em; cambios*/
 }
 
 button span,
@@ -707,7 +779,6 @@ button svg {
 button path {
   fill: currentColor;
 }
-
 
 /* Contactos============================================= */
 
