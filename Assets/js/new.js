@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
  function actualizarTitulo() {
     const titulo = document.getElementById("titulo-responsive");
     if (window.innerWidth < 768) {
-      titulo.innerHTML = 'Soluciones a <em>Medida</em><br>';
+      titulo.innerHTML = 'Soluciones a <em>Medida Para el Sector de las Telecomunicaciones</em> Inalámbricas';
     } else {
       titulo.innerHTML = 'Soluciones a <em>Medida Para el Sector de las Telecomunicaciones</em> Inalámbricas';
     }

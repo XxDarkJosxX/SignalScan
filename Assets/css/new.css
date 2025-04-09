@@ -415,7 +415,7 @@ ul {
 
 .section-title {
   /* font-weight: 700; */
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   letter-spacing: 1px;
 }
 
@@ -1511,6 +1511,14 @@ a {
     margin-top: 35px;
     padding-left: 0%;
     padding-right: 0% !important;
+  }
+
+  .section-heading h4{
+    text-align: initial;
+  }
+
+  .main-banner .left-content p{
+    text-align: justify;
   }
   
 }
