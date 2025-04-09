@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //Productos
-  const nextBtn = document.querySelector(".next");
-  const prevBtn = document.querySelector(".prev");
-  const carousel = document.querySelector(".carousel");
+  const nextBtn = document.querySelector(".nextpr");
+  const prevBtn = document.querySelector(".prevpr");
+  const carousel = document.querySelector(".carouselpr");
   const list = document.querySelector(".list");
   const items = Array.from(document.querySelectorAll(".item"));
-  const runningTimeBar = document.querySelector(".carousel .timeRunning");
+  const runningTimeBar = document.querySelector(".carouselpr .timeRunning");
 
   // Timing configurations
   const TIME_RUNNING = 1500; // Animation duration for the transition

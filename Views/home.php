@@ -165,10 +165,10 @@ nav_principal($data);
 
   <!--next prev button-->
   <div class="arrows">
-    <button class="prev">
+    <button class="prevpr">
       <i class="bi bi-arrow-left"></i>
     </button>
-    <button class="next">
+    <button class="nextpr">
       <i class="bi bi-arrow-right"></i>
     </button>
 
