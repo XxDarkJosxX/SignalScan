@@ -1495,4 +1495,10 @@ a {
     margin-top: 10px;
   }
 
+  .carousel__item:hover{
+    transition: all 0s;
+  }
+  .carousel__item, .carousel__item{
+    transition: all 0s;
+  }
 }
