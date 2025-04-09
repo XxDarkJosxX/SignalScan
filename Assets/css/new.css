@@ -1335,7 +1335,7 @@ a {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .containercontent {
     padding: 0px 0px 0px 0px !important;
   }
