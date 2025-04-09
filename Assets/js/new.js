@@ -162,6 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (navigator.userAgent.includes("Chrome") && !navigator.userAgent.includes("Edg") && !navigator.userAgent.includes("OPR")) {
     document.documentElement.style.zoom = "0.55"; /* Ajuste solo en Chrome */
+    var modalBackdrop = document.querySelector('.modal-backdrop');
   }
   if (modalBackdrop) {
     modalBackdrop.style.transform = "scale(5)";
