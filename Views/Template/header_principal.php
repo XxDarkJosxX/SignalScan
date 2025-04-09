@@ -42,7 +42,7 @@ https://templatemo.com/tm-570-chain-app-dev
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <link rel="stylesheet" href="Assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="Assets/css/templatemo-chain-app-dev.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="Assets/css/animated.css">
     <link rel="stylesheet" href="Assets/css/owl.css">
     <link rel="stylesheet" href="Assets/css/nav.css">
