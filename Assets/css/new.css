@@ -1396,5 +1396,16 @@ a {
     left: calc(var(--left-position) + 800px);
   }
 
+
+
+  .list .item:nth-child(1) .content,
+  .list .item:nth-child(2) .content {
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    top: 0;
+    padding: 330px 10px 20px 20px;
+    text-align: center;
+  }
   
 }

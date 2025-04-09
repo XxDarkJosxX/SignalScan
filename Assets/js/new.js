@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Timing configurations
   const TIME_RUNNING = 1500; // Animation duration for the transition
-  const TIME_AUTO_NEXT = 7500; // Auto-slide duration
+  const TIME_AUTO_NEXT = 75000; // Auto-slide duration
 
   // Initialize timeout variables
   let transitionTimeout;
