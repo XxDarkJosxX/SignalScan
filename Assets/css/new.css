@@ -1382,7 +1382,7 @@ a {
   }
   
   .carousel .list .item:nth-child(5) {
-;
+
     left: calc(var(--left-position) + 400px);
   }
   
