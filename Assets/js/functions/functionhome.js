@@ -99,3 +99,11 @@ document.addEventListener('DOMContentLoaded', function () {
   $list.addEventListener("focusin", handleSlideClick);
   $list.addEventListener("keyup", handleSlideKey);
 })
+
+
+function openmodal() {
+
+  document.querySelector('#titlemodal').innerHTML = "Servicios";
+  $('#modalformhome').modal("show");
+
+}
