@@ -57,14 +57,11 @@ https://templatemo.com/tm-570-chain-app-dev
     <style>
   /* Aseguramos que el fondo de los modales también sea escalado */
   .modal-backdrop {
-    transform: scale(0.55);
+    transform: scale(5);
     transform-origin: center center;
   }
 
-  .modal-content {
-    transform: scale(0.55);
-    transform-origin: center center;
-  }
+
 </style>
 
     
