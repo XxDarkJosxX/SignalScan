@@ -1351,6 +1351,10 @@ a {
 
 
 
+
+
+
+
 .mt-5 {
   margin-top: 0rem !important;
 }
@@ -1501,4 +1505,6 @@ a {
   .carousel__item, .carousel__item{
     transition: all 0s;
   }
+
+  
 }

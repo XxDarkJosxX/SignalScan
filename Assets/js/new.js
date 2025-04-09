@@ -142,7 +142,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+//tituloresponsivo
 
+
+ function actualizarTitulo() {
+    const titulo = document.getElementById("titulo-responsive");
+    if (window.innerWidth < 768) {
+      titulo.innerHTML = 'Soluciones a <em>Medida</em><br>';
+    } else {
+      titulo.innerHTML = 'Soluciones a <em>Medida Para el Sector de las Telecomunicaciones</em> Inalámbricas';
+    }
+  }
+
+  actualizarTitulo();
+  window.addEventListener("resize", actualizarTitulo);
 
 
 });
