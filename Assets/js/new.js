@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const activeItem = parseInt(sliderItems[0].querySelector(".title").getAttribute("data-item")) + 1; // The first visible item is the active one
 
     const progressPercentage = (activeItem / totalSlides) * 100; // Calculate progress percentage
-   
+
   }
 
   // Resets the carousel state after navigation
@@ -142,10 +142,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-//tituloresponsivo
+  //tituloresponsivo
 
 
- function actualizarTitulo() {
+  function actualizarTitulo() {
     const titulo = document.getElementById("titulo-responsive");
     if (window.innerWidth < 768) {
       titulo.innerHTML = 'Soluciones a <em>Medida Para el Sector de las Telecomunicaciones</em> Inalámbricas';
@@ -159,13 +159,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+  if (window.innerWidth <= 768) {
+    if (navigator.userAgent.includes("Chrome") && !navigator.userAgent.includes("Edg") && !navigator.userAgent.includes("OPR")) {
+      document.documentElement.style.zoom = "0.70"; /* Ajuste solo en Chrome */
 
-  if (navigator.userAgent.includes("Chrome") && !navigator.userAgent.includes("Edg") && !navigator.userAgent.includes("OPR")) {
-    document.documentElement.style.zoom = "0.55"; /* Ajuste solo en Chrome */
-    var modalBackdrop = document.querySelector('.modal-backdrop');
-  }
-  if (modalBackdrop) {
-    modalBackdrop.style.transform = "scale(5)";
-    modalBackdrop.style.transformOrigin = "center center";
+    }
   }
 });
