@@ -1,0 +1,8 @@
+{
+    "require": {
+        "php-ai/php-ml": "^0.10.0",
+        "guzzlehttp/guzzle": "^7.8",
+        "pear/text_languagedetect": "^1.0",
+        "pusher/pusher-php-server": "^7.2"
+    }
+}
