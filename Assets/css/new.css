@@ -17,7 +17,230 @@
 
 
 
+/* carousel ===========================================================================*/
+.carousel {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
 
+.carouselpr {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .list .item {
+  width: 180px;
+  height: 250px;
+  position: absolute;
+  bottom: 150px;
+  left: calc(var(--left-position) + 3%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+  transform: translate(0, 0px);
+  transition: all var(--transition-time);
+}
+
+.carousel .list .item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 33, 33, 0.5);
+  z-index: 1;
+}
+
+.carousel .list .item:nth-child(1),
+.carousel .list .item:nth-child(2) {
+  bottom: 0px;
+  left: 0;
+  border-radius: 0;
+  transform: translate(0, 0px);
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .list .item:nth-child(3) {
+  left: var(--left-position);
+}
+
+.carousel .list .item:nth-child(4) {
+  transition-delay: 0.1s;
+  left: calc(var(--left-position) + 200px);
+}
+
+.carousel .list .item:nth-child(5) {
+  transition-delay: 0.2s;
+  left: calc(var(--left-position) + 400px);
+}
+
+.carousel .list .item:nth-child(6) {
+  transition-delay: 0.3s;
+  left: calc(var(--left-position) + 600px);
+}
+
+.carousel .list .item:nth-child(n + 7) {
+  transition-delay: 0.4s;
+  left: calc(var(--left-position) + 800px);
+}
+
+.list .item .content {
+  position: absolute;
+  text-align: left;
+  color: #fff;
+  z-index: 3;
+  left: 0;
+  top: 100%;
+  transform: translateY(-100%);
+  width: 100%;
+  padding: 10px;
+  transition: all var(--transition-time);
+}
+
+.content .title::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.content .title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
+  transition: all var(--transition-time);
+  position: relative;
+}
+
+.content .title::after {
+  content: attr(data-item);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  z-index: 2;
+  font-weight: 400;
+}
+
+.content .name {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1;
+  transition: all var(--transition-time);
+  margin-bottom: 10px;
+  color: #d36e10;
+}
+
+.content .des {
+  font-size: 16px;
+  font-weight: 400;
+  transition: all var(--transition-time);
+  opacity: 0;
+  display: none;
+}
+
+.list .item:nth-child(1) .content,
+.list .item:nth-child(2) .content {
+  transform: translateY(-50%);
+  left: 100px;
+  width: 600px;
+  top: 50%;
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+
+  .list .item:nth-child(1) .content,
+  .list .item:nth-child(2) .content {
+    transform: translateY(-50%);
+    left: 100px;
+    width: 600px;
+    top: 25%;
+    padding: 0;
+  }
+
+  .carouselpr {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel .list .item {
+    bottom: 80px;
+  }
+
+  .arrows {
+    bottom: 25px !important;
+  }
+}
+
+.list .item:nth-child(1) .content .title::before,
+.list .item:nth-child(2) .content .title::before {
+  width: 50px;
+  height: 3px;
+  margin-bottom: 20px;
+}
+
+.list .item:nth-child(1) .content .title::after,
+.list .item:nth-child(2) .content .title::after {
+  font-size: 20px;
+  top: -40px;
+  left: 15px;
+}
+
+.list .item:nth-child(1) .content .title,
+.list .item:nth-child(2) .content .title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.list .item:nth-child(1) .content .name,
+.list .item:nth-child(2) .content .name {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.list .item:nth-child(1) .content .des,
+.list .item:nth-child(2) .content .des {
+  font-size: 16px;
+  opacity: 1;
+  display: block;
+  width: 400px;
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+    filter: blur(33px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+    filter: blur(0);
+  }
+}
+
+/* Carousel */
 
 /* next prev arrows */
 
@@ -247,6 +470,7 @@ ul {
 
 /* Productos Carrusel=================================================== */
 
+/* Productos Carrusel=================================================== */
 :root {
   --height: calc(80vh - 50px);
   --width: 450px;
@@ -284,23 +508,12 @@ ul {
   contain: layout;
   isolation: isolate;
   height: 100%;
-}
-
-.carousel__item,
-.carousel__item * {
-  transition: all .6s cubic-bezier(.55, .24, .18, 1);
-  user-select: none;
-}
-
-.carousel__image,
-.carousel__contents {
-  width: var(--width);
-  height: auto;
+  transition: transform .3s ease, opacity .3s ease; /* Solo animaciones necesarias */
 }
 
 .carousel__item:hover {
   flex-basis: calc(var(--width) / 2);
-  transition: all 0.3s ease;
+  transition: transform .3s ease; /* Reducción de transiciones */
 }
 
 .carousel__item[data-active] {
@@ -311,11 +524,11 @@ ul {
 @media screen and (max-width: 800px) {
   .carousel__item {
     flex-basis: 15%;
+    transition: flex-basis .3s ease; /* Transiciones más rápidas */
   }
 }
 
 @media screen and (max-width: 600px) {
-
   .carousel__item {
     flex-basis: 10%;
     margin: 0 5px;
@@ -327,77 +540,18 @@ ul {
     flex-basis: 45%;
     flex-grow: 0;
   }
-
-  .carousel__item:nth-child(3),
-  .carousel__item:nth-child(7) {
-    flex: 0 0 10px;
-  }
-
-  .carousel__item:nth-child(2),
-  .carousel__item:nth-child(8) {
-    flex: 0 0 5px;
-    transform: translateX(-50px);
-  }
-
-  .carousel__item:nth-child(8) {
-    transform: translateX(50px);
-  }
-
+  
   .carousel__item:nth-child(1),
   .carousel__item:nth-child(n + 9) {
     flex: 0 0 0px;
     margin: 0;
     box-shadow: none;
-    /* opacity: 0!important; */
   }
 
-  .carousel__item:not(:nth-child(n + 5)) img,
-  .carousel__item:nth-child(n + 7) img {
+  .carousel__item img {
     opacity: 0.8;
+    transition: opacity .3s ease; /* Animación más rápida */
   }
-
-  .carousel__item:not(:nth-child(n + 4)) *,
-  .carousel__item:nth-child(n + 7) * {
-    /* opacity: 0!important; */
-  }
-
-}
-
-@media screen and (min-width: 600px) {
-
-  .carousel__item:nth-child(3),
-  .carousel__item:nth-child(10) {
-    flex: 0 0 10px;
-  }
-
-  .carousel__item:nth-child(2),
-  .carousel__item:nth-child(11) {
-    flex: 0 0 5px;
-    transform: translateX(-50px);
-  }
-
-  .carousel__item:nth-child(11) {
-    transform: translateX(50px);
-  }
-
-  .carousel__item:nth-child(1),
-  .carousel__item:nth-child(n + 12) {
-    flex: 0 0 0px;
-    margin: 0;
-    box-shadow: none;
-    /* opacity: 0!important; */
-  }
-
-  .carousel__item:not(:nth-child(n + 5)) img,
-  .carousel__item:nth-child(n + 9) img {
-    opacity: 0.8;
-  }
-
-  .carousel__item:not(:nth-child(n + 4)) *,
-  .carousel__item:nth-child(n + 10) * {
-    /* opacity: 0!important; */
-  }
-
 }
 
 .carousel__item img {
@@ -412,6 +566,7 @@ ul {
   aspect-ratio: 2/3;
   object-fit: cover;
   filter: saturate(0.6);
+  transition: filter .3s ease; /* Animación más rápida */
 }
 
 .carousel__item::after {
@@ -422,8 +577,7 @@ ul {
   height: 100%;
   z-index: 1;
   opacity: 1;
-  /* background: linear-gradient(to right, #ff94541c 0%, #86652205 50%, #40190914 100%); */
-  transition: all .66s cubic-bezier(.55, .24, .18, 1);
+  transition: transform .66s cubic-bezier(.55, .24, .18, 1);
 }
 
 .carousel__item[data-active]::after {
@@ -435,6 +589,7 @@ ul {
   opacity: 1;
   filter: none;
   width: 100%;
+  transition: opacity .3s ease; /* Animación más rápida */
 }
 
 .carousel__contents {
@@ -450,6 +605,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
+  transition: background-position .3s ease, opacity .3s ease;
 }
 
 .carousel__contents .user__name {
@@ -486,10 +642,6 @@ ul {
 }
 
 @media screen and (max-width: 800px) {
-  .carousel__item img {
-    width: calc(var(--width) * .5);
-  }
-
   .carousel__contents {
     transform: translateX(-100%) rotate(90deg);
     transform-origin: bottom right;
@@ -502,6 +654,7 @@ ul {
     bottom: 0;
     left: 0;
     text-align: right;
+    transition: transform .3s ease; /* Animación más rápida */
   }
 
   [data-active] .carousel__contents {
@@ -530,7 +683,6 @@ ul {
   transition-delay: 0.05s;
 }
 
-
 .carousel__nav {
   padding: 1em;
   justify-self: end;
@@ -543,7 +695,6 @@ ul {
 button {
   display: flex;
   gap: .5em;
-  /* padding: 0.5em 1.5em; cambios*/
 }
 
 button span,
@@ -556,6 +707,7 @@ button svg {
 button path {
   fill: currentColor;
 }
+
 
 /* Contactos============================================= */
 

@@ -3,16 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Tu código aquí
 
 
-
-
-  //Carrusel
-
-
-
-  //Carrusel
-
-
-  // Select DOM elements
+//Productos
   const nextBtn = document.querySelector(".next");
   const prevBtn = document.querySelector(".prev");
   const carousel = document.querySelector(".carousel");
@@ -101,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const sliderItems = Array.from(list.querySelectorAll(".item")); // Get the current visible order of items
     const activeItem = parseInt(sliderItems[0].querySelector(".title").getAttribute("data-item")) + 1; // The first visible item is the active one
 
-    const progressPercentage = (activeItem / totalSlides) * 100; // Calculate progress percentage
+    
 
   }
 
