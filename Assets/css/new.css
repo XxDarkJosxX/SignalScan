@@ -13,7 +13,7 @@
   
   :root {
     --left-position: 55%;
-    --transition-time: 0s;
+    --transition-time: 1.2s cubic-bezier(0.25, 1, 0.5, 1);
   }
   
 
@@ -1353,4 +1353,11 @@ a {
   .carrini{
     height: 450px;
   }
+
+    
+  :root {
+    --left-position: 55%;
+    --transition-time: 0s
+  }
+  
 }

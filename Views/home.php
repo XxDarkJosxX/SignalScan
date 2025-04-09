@@ -119,7 +119,7 @@ nav_principal($data);
 <div class="carousel carouselpr">
   <div class="list">
 
-    <div class="item" style="background-image: url('Assets/img/banerscuadrados (9).png');">
+    <div class="item" style="background-image: url('Assets/img/banerscuadrados (9).png'); background-repeat: no-repeat;">
       <div class="content">
         <div class="title">SUNRISE ON PEAKS</div>
         <div class="name">Sunrise</div>
@@ -129,7 +129,7 @@ nav_principal($data);
       </div>
     </div>
 
-    <div class="item" style="background-image: url('Assets/img/banerscuadrados (7).png');">
+    <div class="item" style="background-image: url('Assets/img/banerscuadrados (7).png'); background-repeat: no-repeat;">
       <div class="content">
         <div class="title">RUGGED ROCKS</div>
         <div class="name">Rocky</div>
@@ -139,7 +139,7 @@ nav_principal($data);
       </div>
     </div>
 
-    <div class="item" style="background-image: url('Assets/img/banerscuadrados (12).png');;">
+    <div class="item" style="background-image: url('Assets/img/banerscuadrados (12).png'); background-repeat: no-repeat;">
       <div class="content">
         <div class="title">FOREST PATHWAY</div>
         <div class="name">Forest</div>
@@ -149,7 +149,7 @@ nav_principal($data);
       </div>
     </div>
 
-    <div class="item" style="background-image: url('Assets/img/banerscuadrados (8).png');">
+    <div class="item" style="background-image: url('Assets/img/banerscuadrados (8).png'); background-repeat: no-repeat;">
       <div class="content">
         <div class="title">COLORFUL MEADOW</div>
         <div class="name">Meadow</div>
