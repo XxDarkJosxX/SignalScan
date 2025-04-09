@@ -55,6 +55,6 @@
   <script src="Assets/js/nav.js"></script>
   <script src="Assets/js/new.js?v=<?php echo time(); ?>"></script>
 
-  <script src="Assets/js/functions/<?= $data['page_js'] ?>"></script>
+  <script src="Assets/js/functions/<?= $data['page_js'] ?>?v=<?php echo time(); ?>"></script>
 </body>
 </html>
