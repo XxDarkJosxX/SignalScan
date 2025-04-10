@@ -48,7 +48,12 @@
 
   <script src="Assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="Assets/js/owl-carousel.js"></script>
-  <script src="Assets/js/animation.js?v=<?php echo time(); ?>"></script>
+  <script >if (window.innerWidth > 768) { // Solo en dispositivos de escritorio (puedes ajustar el tamaño)
+    var script = document.createElement('script');
+    script.src = 'Assets/js/animation.js?v=' + Date.now();
+    document.head.appendChild(script);
+}
+</script>
   <script src="Assets/js/imagesloaded.js"></script>
   <script src="Assets/js/popup.js"></script>
   <script src="Assets/js/custom.js"></script>
