@@ -1,170 +1,104 @@
-
-document.addEventListener('DOMContentLoaded', function () {
-  // Tu código aquí
-
-
-
-
-  //Carrusel
-
-
-
-  //Carrusel
-
-
-  // Select DOM elements
+document.addEventListener('DOMContentLoaded', () => {
   const nextBtn = document.querySelector(".nextpr");
   const prevBtn = document.querySelector(".prevpr");
   const carousel = document.querySelector(".carouselpr");
   const list = document.querySelector(".list");
   const items = Array.from(document.querySelectorAll(".item"));
   const runningTimeBar = document.querySelector(".carousel .timeRunning");
+  const arrowsDiv = document.querySelector(".arrows");
 
-  // Timing configurations
-  const TIME_RUNNING = 1500; // Animation duration for the transition
-  const TIME_AUTO_NEXT = 7500; // Auto-slide duration
+  const TIME_RUNNING = 1500;
+  const TIME_AUTO_NEXT = 7500;
 
-  // Initialize timeout variables
   let transitionTimeout;
   let autoNextTimeout;
 
-  // Create and append the progress bar
-  const arrowsDiv = document.querySelector(".arrows");
-  const progressBarContainer = document.createElement("div");
-  progressBarContainer.className = "progress-bar-container";
-
-
-
-
-
-  arrowsDiv.appendChild(progressBarContainer);
-
-  // Event listeners for navigation buttons
-  nextBtn.addEventListener("click", () => handleSliderNavigation("next"));
-  prevBtn.addEventListener("click", () => handleSliderNavigation("prev"));
-
-  // Add attribute to each item
+  // Preconfiguro datos por slide
   items.forEach((item, index) => {
-    item.querySelector(".title").setAttribute("data-item", index + 1);
+    item.querySelector(".title").dataset.item = index + 1;
   });
 
-  // Automatically navigate to the next slide
-  autoNextTimeout = setTimeout(() => {
-    nextBtn.click();
-  }, TIME_AUTO_NEXT);
+  // Control de navegación
+  nextBtn.addEventListener("click", () => handleSlider("next"));
+  prevBtn.addEventListener("click", () => handleSlider("prev"));
 
-  // Start the initial running time animation and progress bar
-  resetAnimation();
-  afterSlideChange();
+  startAutoSlide();
+  resetProgressBar();
+  updateSlideInfo();
 
-  // Resets the running time animation
-  function resetAnimation() {
-    runningTimeBar.style.animation = "none"; // Remove current animation
-    runningTimeBar.offsetHeight; // Trigger reflow to restart animation
-    runningTimeBar.style.animation = `runningTime ${TIME_AUTO_NEXT / 1000
-      }s linear forwards`; // Restart animation
-  }
-
-  // Handles slider navigation (next/prev)
-  function handleSliderNavigation(direction) {
-    const sliderItems = list.querySelectorAll(".item"); // Get all current items in the list
+  function handleSlider(direction) {
+    const sliderItems = list.querySelectorAll(".item");
 
     if (direction === "next") {
-      list.appendChild(sliderItems[0]); // Move the first item to the end of the list
-      carousel.classList.add("next"); // Add the "next" class for transition
+      list.appendChild(sliderItems[0]);
+      carousel.classList.add("next");
     } else if (direction === "prev") {
-      list.prepend(sliderItems[sliderItems.length - 1]); // Move the last item to the start of the list
-      carousel.classList.add("prev"); // Add the "prev" class for transition
+      list.prepend(sliderItems[sliderItems.length - 1]);
+      carousel.classList.add("prev");
     }
 
-    afterSlideChange(); // Log the active slide index
-  }
-
-  // Logs the current active slide's original index
-  function afterSlideChange() {
-    const slideNumberElement = document.querySelector(".slide-number");
-    if (slideNumberElement) slideNumberElement.remove();
-
-    const sliderItems = Array.from(list.querySelectorAll(".item")); // Get the current visible order of items
-    const activeItem = parseInt(
-      sliderItems[1].querySelector(".title").getAttribute("data-item")
-    ); // The first visible item is the active one
-
-    const activeIndex =
-      activeItem < 10 ? `0${activeItem}` : activeItem.toString();
-
-    const div = document.createElement("div");
-    div.classList.add("slide-number");
-    div.textContent = `${activeIndex}/${sliderItems.length}`;
-
-    arrowsDiv.appendChild(div);
-
-    console.log(`Current active slide original index: ${activeIndex}`);
-
-    updateProgressBar();
+    updateSlideInfo();
     resetCarouselState();
   }
 
-  // Updates the progress bar based on the active slide index
-  function updateProgressBar() {
-    const totalSlides = items.length;
+  function updateSlideInfo() {
+    const oldNumber = document.querySelector(".slide-number");
+    if (oldNumber) oldNumber.remove();
 
-    const sliderItems = Array.from(list.querySelectorAll(".item")); // Get the current visible order of items
-    const activeItem = parseInt(sliderItems[0].querySelector(".title").getAttribute("data-item")) + 1; // The first visible item is the active one
+    const sliderItems = Array.from(list.querySelectorAll(".item"));
+    const activeItem = parseInt(sliderItems[1].querySelector(".title").dataset.item);
+    const formattedIndex = activeItem < 10 ? `0${activeItem}` : activeItem.toString();
 
-    const progressPercentage = (activeItem / totalSlides) * 100; // Calculate progress percentage
-
+    const div = document.createElement("div");
+    div.classList.add("slide-number");
+    div.textContent = `${formattedIndex}/${sliderItems.length}`;
+    arrowsDiv.appendChild(div);
   }
 
-  // Resets the carousel state after navigation
   function resetCarouselState() {
-    // Clear existing timeouts for transitions and auto-slide
     clearTimeout(transitionTimeout);
     clearTimeout(autoNextTimeout);
 
-    // Remove the transition class after the animation duration
-    transitionTimeout = setTimeout(() => {
+    // Usamos requestAnimationFrame para esperar a la próxima "pintada"
+    requestAnimationFrame(() => {
       carousel.classList.remove("next");
       carousel.classList.remove("prev");
-    }, TIME_RUNNING);
+    });
 
-    // Restart the auto-slide timer
+    startAutoSlide();
+    resetProgressBar();
+  }
+
+  function startAutoSlide() {
     autoNextTimeout = setTimeout(() => {
       nextBtn.click();
     }, TIME_AUTO_NEXT);
-
-    // Reset the running time bar animation
-    resetAnimation();
   }
 
+  function resetProgressBar() {
+    if (runningTimeBar) {
+      runningTimeBar.style.animation = "none";
+      // Esto ya no forzará reflow visible
+      requestAnimationFrame(() => {
+        runningTimeBar.style.animation = `runningTime ${TIME_AUTO_NEXT / 1000}s linear forwards`;
+      });
+    }
+  }
 
-
-
-
-
-  //tituloresponsivo
-
-
+  // Responsive title
   function actualizarTitulo() {
     const titulo = document.getElementById("titulo-responsive");
-    if (window.innerWidth < 768) {
-      titulo.innerHTML = 'Soluciones a <em>Medida Para el Sector de las Telecomunicaciones</em> Inalámbricas';
-    } else {
-      titulo.innerHTML = 'Soluciones a <em>Medida Para el Sector de las Telecomunicaciones</em> Inalámbricas';
-    }
+    const html = 'Soluciones a <em>Medida Para el Sector de las Telecomunicaciones</em> Inalámbricas';
+    if (titulo) titulo.innerHTML = html;
   }
 
   actualizarTitulo();
   window.addEventListener("resize", actualizarTitulo);
 
-
-
+  // Ajuste para Chrome móvil
   if (window.innerWidth <= 768) {
     if (navigator.userAgent.includes("Chrome") && !navigator.userAgent.includes("Edg") && !navigator.userAgent.includes("OPR")) {
-      document.documentElement.style.zoom = "0.80"; /* Ajuste solo en Chrome */
-
+      document.documentElement.style.zoom = "0.80";
     }
   }
 });
-
-
