@@ -60,7 +60,7 @@ https://templatemo.com/tm-570-chain-app-dev
     
   </head>
 
-  <body id="contenido-principal">
+  <body class="contenido-principal">
 
     <!-- ***** Preloader Start ***** -->
     <div id="js-preloader" class="js-preloader">
