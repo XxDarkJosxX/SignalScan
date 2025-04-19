@@ -1048,7 +1048,7 @@ Services Style
 }
 
 .service-item:hover {
-  background-image: url(../images/service-bg.jpg);
+  /* background-image: url(../images/service-bg.jpg); */
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1120,7 +1120,7 @@ About Us
 }
 
 .about-us:after {
-  background-image: url(../images/about-bg.jpg);
+  /* background-image: url(../images/about-bg.jpg); */
   width: 777px;
   height: 1132px;
   content: '';

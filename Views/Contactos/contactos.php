@@ -77,7 +77,7 @@ nav_content($data);
 
 <!-- Cambios de Formulario -->
 
-<div class="contactContainer" s>
+<div class="contactContainer">
     <div class="innerwrap">
 
         <section class="section1 clearfix">

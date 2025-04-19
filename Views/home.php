@@ -20,7 +20,7 @@ nav_principal($data);
                   <img src="assets/images/heading-line-dec.png" alt="">
                   <p>Somos alquimistas dominando la magia de transmitir
                     información en forma de energía eléctrica y magnética a través del espacio libre, con <a style="color: #366cbb;">nuestra tecnología y
-                    soluciones </a> hacemos visible lo invisible para ayudar a que
+                      soluciones </a> hacemos visible lo invisible para ayudar a que
                     la humanidad se comunique</p>
                 </div>
 
@@ -28,76 +28,68 @@ nav_principal($data);
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+            <div class="right-image wow fadeInRight app" data-wow-duration="1s" data-wow-delay="0.5s">
               <section class="carousel carrini" style="margin-top: 40px;">
                 <ul class="carousel__list">
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (11).png" width="480" height="720" loading="eager" data-no-lazy="true"/></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (11).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
                       <div class="carousel__contents">
-                        <!-- <h2 class="user__name">Anthony Lee</h2> -->
                         <h3 class="user__title">Estudios de Calidad</h3>
                       </div>
                     </div>
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (23).png" width="480" height="720" loading="eager" data-no-lazy="true"/></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (23).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
                       <div class="carousel__contents">
-                        <!-- <h2 class="user__name">Alicia Chevalier</h2> -->
                         <h3 class="user__title">Alquiler de equipamiento</h3>
                       </div>
                     </div>
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (25).png" width="480" height="720" loading="eager" data-no-lazy="true"/></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (25).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
                       <div class="carousel__contents">
-                        <!-- <h2 class="user__name">Nate Boucher</h2> -->
                         <h3 class="user__title">Capacitación técnica</h3>
                       </div>
                     </div>
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (17).png" width="480" height="720" loading="eager" data-no-lazy="true"/></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (17).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
                       <div class="carousel__contents">
-                        <!-- <h2 class="user__name">Leah Harris</h2> -->
                         <h3 class="user__title">Equipos de medición</h3>
                       </div>
                     </div>
                   </li>
-                  <li class="carousel__item" tabindex="0" data-active="data-active">
+                  <li class="carousel__item" tabindex="0" data-active="true">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (12).png" width="480" height="720" loading="eager" data-no-lazy="true"/></div><!--  central -->
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (12).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
                       <div class="carousel__contents">
-                        <!-- <h2 class="user__name">Angelina Laurent</h2> -->
                         <h3 class="user__title">Estudios de interferencia</h3>
                       </div>
                     </div>
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (26).png" width="480" height="720" loading="eager" data-no-lazy="true"/></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (26).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
                       <div class="carousel__contents">
-                        <!-- <h2 class="user__name">Gal Gadot</h2> -->
                         <h3 class="user__title">Estudios de ocupación</h3>
                       </div>
                     </div>
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (14).png" width="480" height="720" loading="eager" data-no-lazy="true"/></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (14).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
                       <div class="carousel__contents">
-                        <!-- <h2 class="user__name">Albert Sørensen</h2> -->
                         <h3 class="user__title">Mediciones de cobertura</h3>
                       </div>
                     </div>
                   </li>
-
                 </ul>
-
               </section>
+
             </div>
           </div>
         </div>
@@ -158,7 +150,7 @@ nav_principal($data);
           flowers. Nature at its best.</div>
       </div>
     </div>
-    
+
 
 
   </div>
@@ -186,7 +178,7 @@ nav_principal($data);
   <div class="container containerrespo">
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
-        <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="section-heading  wow fadeInDown servicesdown" data-wow-duration="1s" data-wow-delay="0.5s">
           <h4>Increíbles <em>Servicios &amp; Funciones</em> Para Ti</h4>
           <img src="assets/images/heading-line-dec.png" alt="">
           <!-- <p>Este es un ejemplo de texto generado por el equipo de desarrollo para rellenar espacio en una página. <a rel="nofollow" href="https://www.toocss.com/" target="_blank">Su </a> propósito es simplemente proporcionar <a href="https://templatemo.com/contact" target="_parent">contenido de muestra </a> sin un significado específico.</p> -->
@@ -202,7 +194,7 @@ nav_principal($data);
           <h4>Medición y Análisis de Redes Inalámbricas</h4>
           <p>Evaluamos la calidad y eficiencia de redes inalámbricas mediante estudios de interferencia, ocupación del espectro, cobertura y Radiación No Ionizante.</p>
           <div class="text-button">
-          <a onclick="openmodal()">Leer mas <i class="fa fa-arrow-right"></i></a>
+            <a onclick="openmodal()">Leer mas <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -212,7 +204,7 @@ nav_principal($data);
           <h4>Venta y Comercialización de Equipos</h4>
           <p>Suministramos equipos de medición especializados para redes de fibra óptica, inalámbricas y de cobre, garantizando precisión y fiabilidad en cada análisis.</p>
           <div class="text-button">
-          <a onclick="openmodal()">Leer mas <i class="fa fa-arrow-right"></i></a>
+            <a onclick="openmodal()">Leer mas <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -232,7 +224,7 @@ nav_principal($data);
           <h4>Capacitación Técnica &amp; Especializada</h4>
           <p>Brindamos formación técnica en medición y análisis de redes de telecomunicaciones, asegurando conocimientos actualizados y aplicables al sector.</p>
           <div class="text-button">
-          <a onclick="openmodal()">Leer mas <i class="fa fa-arrow-right"></i></a>
+            <a onclick="openmodal()">Leer mas <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -320,72 +312,72 @@ nav_principal($data);
 
 
 <div class="contactContainer">
-    <div class="innerwrap">
-      
-
-        <section class="section1 clearfix">
-
-        </section>
-
-        <section class="section2 clearfix">
-          
-            <div class="col2 column1 first">
-
-                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-                <div class="sec2map" style='overflow:hidden;height:550px;width:100%;'>
-                    <div id='gmap_canvas' style='height:100%;width:100%;'>
+  <div class="innerwrap">
 
 
-                        <iframe class="rounded w-500 mapastyle" style='height:100%;width:100%;' src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d820.7216557791962!2d-58.4061649!3d-34.6323053!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM3JzU2LjIiUyA1OMKwMjQnMjAuMiJX!5e0!3m2!1ses!2sbo!4v1709151645097!5m2!1ses!2sbo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="section1 clearfix">
 
-                    </div>
+    </section>
+
+    <section class="section2 clearfix">
+
+      <div class="col2 column1 first">
+
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+        <div class="sec2map" style='overflow:hidden;height:550px;width:100%;'>
+          <div id='gmap_canvas' style='height:100%;width:100%;'>
 
 
-                    <style>
-                        #gmap_canvas img {
-                            max-width: none !important;
-                            background: none !important
-                        }
-                    </style>
+            <iframe class="rounded w-500 mapastyle" style='height:100%;width:100%;' src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d820.7216557791962!2d-58.4061649!3d-34.6323053!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM3JzU2LjIiUyA1OMKwMjQnMjAuMiJX!5e0!3m2!1ses!2sbo!4v1709151645097!5m2!1ses!2sbo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+
+
+          <style>
+            #gmap_canvas img {
+              max-width: none !important;
+              background: none !important
+            }
+          </style>
+        </div>
+
+      </div>
+      <div class="col2 column2 last">
+
+        <div class="sec2contactform">
+
+          <div class="form-container">
+
+            <form id="feedbackForm">
+              <h1>Contáctanos</h1>
+
+              <div class="section">
+                <h4 class="section-title">¿Tienes una idea, un proyecto o simplemente querés saber más sobre lo que hacemos?</h4>
+                <div class="input-group">
+                  <label for="name">Estamos listos para ayudarte. Escribinos por correo, WhatsApp o redes sociales y te responderemos lo antes posible.</label>
+
                 </div>
 
-            </div>
-            <div class="col2 column2 last">
-    
-                <div class="sec2contactform">
+                <a class="float-buttonform colorbuttonemail" target="_blank" href="https://api.whatsapp.com/send?phone=67016437">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  <span> Envíanos un mensaje por Gmail<span>
+                </a>
 
-                    <div class="form-container">
+                <a class="float-buttonform colorbuttonwap" target="_blank" href="https://api.whatsapp.com/send?phone=67016437">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                  <span>Envíanos un mensaje por WhatsApp<span>
+                </a>
 
-                        <form id="feedbackForm">
-                            <h1>Contáctanos</h1>
-
-                            <div class="section">
-                                <h4 class="section-title">¿Tienes una idea, un proyecto o simplemente querés saber más sobre lo que hacemos?</h4>
-                                <div class="input-group">
-                                    <label for="name">Estamos listos para ayudarte. Escribinos por correo, WhatsApp o redes sociales y te responderemos lo antes posible.</label>
-                                  
-                                </div>
-
-                                <a class="float-buttonform colorbuttonemail" target="_blank" href="https://api.whatsapp.com/send?phone=67016437">
-                                    <i class="fas fa-envelope" aria-hidden="true"></i>
-                                    <span> Envíanos un mensaje por Gmail<span>
-                                </a>
-
-                                <a class="float-buttonform colorbuttonwap" target="_blank" href="https://api.whatsapp.com/send?phone=67016437">
-                                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                                    <span>Envíanos un mensaje por WhatsApp<span>
-                                </a>
-
-                        </form>
+            </form>
 
 
-                    </div>
-                </div>
+          </div>
+        </div>
 
-            </div>
-        </section>
+      </div>
+    </section>
 
-    </div>
+  </div>
 </div>
 
 

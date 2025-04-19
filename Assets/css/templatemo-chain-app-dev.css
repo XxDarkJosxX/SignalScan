@@ -961,7 +961,7 @@ Services Style
 
 .services:after {
   content: '';
-  background-image: url(../images/services-left-dec1.png);
+  /* background-image: url(../images/services-left-dec1.png); */
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1139,7 +1139,7 @@ About Us
 }
 
 .about-us:after {
-  background-image: url(../images/about-bg.jpg);
+  /* background-image: url(../images/about-bg.jpg); */
   width: 777px;
   height: 1132px;
   content: '';
@@ -1255,7 +1255,7 @@ The Clients
 
 .the-clients .nacc .thumb .client-content {
   padding: 60px 30px;
-  background-image: url(../images/client-bg.png);
+  /* background-image: url(../images/client-bg.png); */
   background-size: cover;
   border-radius: 50px;
   width: 100%;
@@ -1334,7 +1334,7 @@ The Clients
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../images/regular-table-top.png);
+  /* background-image: url(../images/regular-table-top.png); */
   z-index: 0;
   content: '';
   width: 274px;
@@ -1345,7 +1345,7 @@ The Clients
   position: absolute;
   bottom: 0;
   right: 0;
-  background-image: url(../images/regular-table-bottom.png);
+  /* background-image: url(../images/regular-table-bottom.png); */
   z-index: 0;
   content: '';
   width: 370px;
@@ -1409,7 +1409,7 @@ The Clients
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../images/pro-table-top.png);
+  /* background-image: url(../images/pro-table-top.png); */
   z-index: 0;
   content: '';
   width: 281px;
@@ -1422,7 +1422,7 @@ The Clients
   right: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/pro-table-bottom.png);
+  /* background-image: url(../images/pro-table-bottom.png); */
   z-index: 0;
   content: '';
   width: 100%;
@@ -1556,7 +1556,7 @@ Footer Style
 */
 
 footer {
-  background-image: url(../images/footer-bg1.png);
+  /* background-image: url(../images/footer-bg1.png); */
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
