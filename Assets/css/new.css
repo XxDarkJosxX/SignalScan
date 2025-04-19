@@ -1,5 +1,10 @@
 body:not(.page-loaded) .contenido-principal {
-  visibility: hidden;
+  visibility: hidden !important;
+}
+
+/* Cuando la página esté cargada, se muestra el contenido */
+body.page-loaded .contenido-principal {
+  visibility: visible !important;
 }
 
 

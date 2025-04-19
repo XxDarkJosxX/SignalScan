@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.add('page-loaded');
+
+  // Eliminar el preloader una vez cargada la página
+  const preloader = document.getElementById('js-preloader');
+  if (preloader) {
+    preloader.style.display = 'none';
+  }
   const nextBtn = document.querySelector(".nextpr");
   const prevBtn = document.querySelector(".prevpr");
   const carousel = document.querySelector(".carouselpr");
