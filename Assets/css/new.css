@@ -1332,13 +1332,13 @@ a {
 
 @media screen and (max-width: 545px) {
   .float-buttonform span {
-    display: none;
+  
   }
 
   .float-buttonform {
     bottom: 15px;
     right: 15px;
-    width: 45px;
+    width: 100%;
     border-radius: 20px 20px 5px 20px;
   }
 
