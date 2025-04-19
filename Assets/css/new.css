@@ -1,3 +1,8 @@
+body:not(.page-loaded) .contenido-principal {
+  visibility: hidden;
+}
+
+
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 992px) {
   .responsive-img {
@@ -46,7 +51,7 @@
   z-index: 100;
   transform: translate(0, 0px);
   transition: all var(--transition-time);
-  background-size: 100% 100% !important;
+  
 }
 
 .carousel .list .item::after {
@@ -329,11 +334,16 @@
   }
 }
 
+@media(max-width: 767px) {
+  .carousel .list .item {
+
+    background-size: 110% 100% !important;
+  }
+}
 
 
 
-
-/*** Footer Start ***/
+/*** Footer Start **==========================================================*/
 @media(max-width: 767px) {
   .titlefooter {
     text-align: center;
