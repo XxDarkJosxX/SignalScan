@@ -1,5 +1,5 @@
-body {
-  display: none; /* El contenido está oculto por defecto */
+html.loading body {
+  display: none !important;
 }
 .js-preloader {
   position: fixed;
@@ -13,9 +13,7 @@ body {
   align-items: center;
   z-index: 9999;
 }
-.main-banner{
-  display: none !important;
-}
+
 
 
 /* Media query para pantallas pequeñas */
