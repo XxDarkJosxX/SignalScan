@@ -179,7 +179,7 @@ nav_principal($data);
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
         <div class="section-heading  wow fadeInDown servicesdown" data-wow-duration="1s" data-wow-delay="0.5s">
-          <h4>Increíbles <em>Servicios &amp; Funciones</em> Para Ti</h4>
+          <h4>Increíbles <em>Servicios &amp; Funciones</em></h4>
           <img src="assets/images/heading-line-dec.png" alt="">
           <!-- <p>Este es un ejemplo de texto generado por el equipo de desarrollo para rellenar espacio en una página. <a rel="nofollow" href="https://www.toocss.com/" target="_blank">Su </a> propósito es simplemente proporcionar <a href="https://templatemo.com/contact" target="_parent">contenido de muestra </a> sin un significado específico.</p> -->
         </div>
