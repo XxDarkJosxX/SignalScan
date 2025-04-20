@@ -1,12 +1,6 @@
 body {
-  visibility: hidden; /* Esto oculta todo el contenido */
+  display: none; /* El contenido está oculto por defecto */
 }
-
-body.page-loaded {
-  visibility: visible; /* Esto hace que el contenido sea visible una vez cargado */
-}
-
-/* Preloader styling */
 .js-preloader {
   position: fixed;
   top: 0;
@@ -19,6 +13,7 @@ body.page-loaded {
   align-items: center;
   z-index: 9999;
 }
+
 
 
 /* Media query para pantallas pequeñas */

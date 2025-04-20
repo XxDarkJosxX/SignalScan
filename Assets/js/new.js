@@ -1,15 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  document.body.classList.add('page-loaded');
+  
 
-  // Elimina el preloader después de que la página se cargue
-  const preloader = document.getElementById('js-preloader');
-  if (preloader) {
-    setTimeout(function () {
-      preloader.style.display = 'none';
-    }, 500); // Elimina el preloader con un pequeño retraso para asegurarse de que la transición se vea correctamente
-  }
-
-
+  
   const nextBtn = document.querySelector(".nextpr");
   const prevBtn = document.querySelector(".prevpr");
   const carousel = document.querySelector(".carouselpr");

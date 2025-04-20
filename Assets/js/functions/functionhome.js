@@ -1,6 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
-  
-  
+
+  // Asegúrate de que el preloader esté completamente cargado
+  document.body.style.display = 'block'; // Muestra el contenido de la página
+
+  // Elimina el preloader después de que la página se cargue
+  const preloader = document.getElementById('js-preloader');
+  if (preloader) {
+    setTimeout(function () {
+      preloader.style.display = 'none'; // Oculta el preloader
+    }, 500); // Elimina el preloader con un pequeño retraso para dar tiempo a la transición
+  }
+
+
+
+
   const d = document;
   const $q = d.querySelectorAll.bind(d);
   const $g = d.querySelector.bind(d);
