@@ -6,14 +6,14 @@
             <div class="col-md-6 col-lg-6 col-xl-4" style="margin-top: 10px !important;">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="text-white mb-4 titlefooter">
-                        <img width="200" height="90" src="Assets/img/logoestetica.svg" style="max-width: 47% !important;"> <br><br>Redes Sociales
+                        <img width="200" height="90" src="Assets/images/logo.jpg" style="max-width: 34% !important;"> <br><br>Redes Sociales
                     </h4>
 
                     <div class="d-flex align-items-center">
                         <i class="fas fa-share fa-2x text-white me-2"></i>
-                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.facebook.com/people/Laura-Colman-Est%C3%A9tica/61550353983141/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.tiktok.com/@lcestetic"><i class="fab fa-tiktok"></i></a>
-                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/lcestetic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-tiktok"></i></a>
+                        <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -21,19 +21,18 @@
             <div class="col-md-6 col-lg-6 col-xl-4">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="mb-4 text-white">Servicios</h4>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Cejas y Pestañas</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Cosmetología</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Depilacion Definitiva</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Masajes</a>
-                    <a href=""><i class="fas fa-angle-right me-2"></i> Microblading</a>
+                    <a href="#top"><i class="fas fa-angle-right me-2"></i> Inicio</a>
+                    <a href="#producos"><i class="fas fa-angle-right me-2"></i> Productos</a>
+                    <a href="#services"><i class="fas fa-angle-right me-2"></i> Servicios</a>
+                    <a href="#Contactos"><i class="fas fa-angle-right me-2"></i> Contactos</a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-162 col-xl-4">
                 <div class="footer-item d-flex flex-column">
                     <h4 class="mb-4 text-white">Información Contactos</h4>
-                    <a href="https://maps.app.goo.gl/mkzxkBkZ2LXGgrCP9"><i class="fa fa-map-marker-alt me-2"></i> La Rioja 1836, C1436 CABA, Argentina</a>
-                    <a href=""><i class="fas fa-envelope me-2"></i> lauracestetic@gmail.com</a>
-                    <a href=""><i class="fas fa-phone me-2"></i> +54 11 3525-5541</a>
+                    <a href="https://maps.app.goo.gl/mkzxkBkZ2LXGgrCP9"><i class="fa fa-map-marker-alt me-2"></i> Calle Yanacocha 842, Edificio Esculapio depto. 5B La Paz Bolivia</a>
+                    <a href="mailto:sergio.lima@signalscan.com.bo?subject=Consulta&body=Hola,%20quiero%20más%20información."><i class="fas fa-envelope me-2"></i> sergio.lima@signalscan.com.bo</a>
+                    <a href="https://api.whatsapp.com/send?phone=76288202&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n"><i class="fas fa-phone me-2"></i> 76288202</a>
                 </div>
             </div>
         </div>

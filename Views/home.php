@@ -108,7 +108,7 @@ nav_principal($data);
 
 <!-- Productos -->
 
-<div class="carousel carouselpr">
+<div class="carousel carouselpr" id="producos">
   <div class="list">
 
     <div class="item" style="background-image: url('Assets/img/banerscuadrados (9).png'); background-repeat: no-repeat;">
@@ -311,7 +311,7 @@ nav_principal($data);
 <!-- Carrusel -->
 
 
-<div class="contactContainer">
+<div class="contactContainer" id="Contactos">
   <div class="innerwrap">
 
 
@@ -328,8 +328,9 @@ nav_principal($data);
           <div id='gmap_canvas' style='height:100%;width:100%;'>
 
 
-            <iframe class="rounded w-500 mapastyle" style='height:100%;width:100%;' src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d820.7216557791962!2d-58.4061649!3d-34.6323053!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM3JzU2LjIiUyA1OMKwMjQnMjAuMiJX!5e0!3m2!1ses!2sbo!4v1709151645097!5m2!1ses!2sbo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+            
+            <iframe class="rounded w-500 mapastyle" style='height:100%;width:100%;' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.654675617361!2d-68.133112!3d-16.4930143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f219cc38ef5b5%3A0x17028e4f0195e6e6!2sEdificio%20Esculapio!5e0!3m2!1ses!2sbo!4v1745112874690!5m2!1ses!2sbo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
 
@@ -358,12 +359,12 @@ nav_principal($data);
 
                 </div>
 
-                <a class="float-buttonform colorbuttonemail" target="_blank" href="https://api.whatsapp.com/send?phone=67016437">
+                <a class="float-buttonform colorbuttonemail" target="_blank" href="mailto:sergio.lima@signalscan.com.bo?subject=Consulta&body=Hola,%20quiero%20más%20información.">
                   <i class="fas fa-envelope" aria-hidden="true"></i>
                   <span> Envíanos un mensaje por Gmail<span>
                 </a>
 
-                <a class="float-buttonform colorbuttonwap" target="_blank" href="https://api.whatsapp.com/send?phone=67016437">
+                <a class="float-buttonform colorbuttonwap" target="_blank" href="https://api.whatsapp.com/send?phone=76288202&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n">
                   <i class="fab fa-whatsapp" aria-hidden="true"></i>
                   <span>Envíanos un mensaje por WhatsApp<span>
                 </a>
