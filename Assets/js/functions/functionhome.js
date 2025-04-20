@@ -1,17 +1,43 @@
 document.addEventListener('DOMContentLoaded', function () {
-  
-   // Mostrar el contenido principal
-   const contenido = document.querySelector('.contenido-principal');
-   if (contenido) {
-     contenido.style.display = 'block';
-   }
 
-   // Ocultar el preloader
-   const preloader = document.getElementById('js-preloader');
-   if (preloader) {
-     preloader.style.display = 'none';
-   }
-  
+
+
+
+
+  // Mostrar el contenido principal
+  const contenido = document.querySelector('.contenido-principal');
+  if (contenido) {
+    contenido.style.display = 'block';
+  }
+
+  // Ocultar el preloader
+  const preloader = document.getElementById('js-preloader');
+  if (preloader) {
+    preloader.style.display = 'none';
+  }
+
+
+
+
+
+
+  const carrusel = document.querySelector('.carrini');
+
+  // Aplica solo en pantallas pequeñas
+  if (window.innerWidth <= 768 && carrusel) {
+    // Retrasa un poco para que se note la animación
+    setTimeout(() => {
+      carrusel.classList.add('show');
+    }, 300); // podés ajustar el tiempo
+  } else {
+    // Si no es móvil, mostrarlo inmediatamente
+    carrusel.classList.add('show');
+  }
+
+
+
+
+
   const d = document;
   const $q = d.querySelectorAll.bind(d);
   const $g = d.querySelector.bind(d);

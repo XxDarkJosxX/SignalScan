@@ -467,6 +467,18 @@ ul {
 
 /* Productos Carrusel=================================================== */
 
+@media (max-width: 768px) {
+  .carrini {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .carrini.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 :root {
   --height: calc(80vh - 50px);
   --width: 450px;
