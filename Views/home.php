@@ -33,7 +33,7 @@ nav_principal($data);
                 <ul class="carousel__list">
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (11).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (11).png" width="480" height="720" loading="lazy" /></div>
                       <div class="carousel__contents">
                         <h3 class="user__title">Estudios de Calidad</h3>
                       </div>
@@ -41,7 +41,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (23).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (23).png" width="480" height="720" loading="lazy"/></div>
                       <div class="carousel__contents">
                         <h3 class="user__title">Alquiler de equipamiento</h3>
                       </div>
@@ -49,7 +49,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (25).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (25).png" width="480" height="720" loading="lazy"/></div>
                       <div class="carousel__contents">
                         <h3 class="user__title">Capacitación técnica</h3>
                       </div>
@@ -57,7 +57,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (17).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (17).png" width="480" height="720" loading="lazy" /></div>
                       <div class="carousel__contents">
                         <h3 class="user__title">Equipos de medición</h3>
                       </div>
@@ -65,7 +65,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0" data-active="true">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (12).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (12).png" width="480" height="720" loading="lazy" /></div>
                       <div class="carousel__contents">
                         <h3 class="user__title">Estudios de interferencia</h3>
                       </div>
@@ -73,7 +73,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (26).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (26).png" width="480" height="720" loading="lazy"/></div>
                       <div class="carousel__contents">
                         <h3 class="user__title">Estudios de ocupación</h3>
                       </div>
@@ -81,7 +81,7 @@ nav_principal($data);
                   </li>
                   <li class="carousel__item" tabindex="0">
                     <div class="carousel__box">
-                      <div class="carousel__image"><img src="Assets/img/banerslargos (14).png" width="480" height="720" loading="eager" data-no-lazy="true" /></div>
+                      <div class="carousel__image"><img src="Assets/img/banerslargos (14).png" width="480" height="720" loading="lazy" /></div>
                       <div class="carousel__contents">
                         <h3 class="user__title">Mediciones de cobertura</h3>
                       </div>
