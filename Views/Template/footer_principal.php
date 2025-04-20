@@ -1,8 +1,6 @@
-<footer id="newsletter">
 
-</footer>
 <!-- Footer Start -->
- <div class="container-fluid footer py-5 " data-wow-delay="0.2s" style="padding-bottom: 90px !important;"><!-- wow fadeIn -->
+<div class="container-fluid footer py-5 " data-wow-delay="0.2s" style="padding-bottom: 90px !important;"><!-- wow fadeIn -->
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-md-6 col-lg-6 col-xl-4" style="margin-top: 10px !important;">
@@ -42,24 +40,27 @@
     </div>
 </div>
 <!-- Footer End -->
-    
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <script src="Assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="Assets/js/owl-carousel.js"></script>
-  <script >if (window.innerWidth > 768) { // Solo en dispositivos de escritorio (puedes ajustar el tamaño)
-    var script = document.createElement('script');
-    script.src = 'Assets/js/animation.js?v=' + Date.now();
-    document.head.appendChild(script);
-}
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="Assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="Assets/js/owl-carousel.js"></script>
+<script>
+    if (window.innerWidth > 768) { // Solo en dispositivos de escritorio (puedes ajustar el tamaño)
+        var script = document.createElement('script');
+        script.src = 'Assets/js/animation.js?v=' + Date.now();
+        document.head.appendChild(script);
+    }
 </script>
-  <script src="Assets/js/imagesloaded.js"></script>
-  <script src="Assets/js/popup.js"></script>
-  <script src="Assets/js/custom.js"></script>
-  <script src="Assets/js/nav.js"></script>
-  <script src="Assets/js/new.js?v=<?php echo time(); ?>"></script>
+<script src="Assets/js/imagesloaded.js"></script>
+<script src="Assets/js/popup.js"></script>
+<script src="Assets/js/custom.js"></script>
+<script src="Assets/js/nav.js"></script>
+<script src="Assets/js/new.js?v=<?php echo time(); ?>"></script>
 
-  <script src="Assets/js/functions/<?= $data['page_js'] ?>?v=<?php echo time(); ?>"></script>
+<script src="Assets/js/functions/<?= $data['page_js'] ?>?v=<?php echo time(); ?>"></script>
+</div>
 </body>
+
 </html>

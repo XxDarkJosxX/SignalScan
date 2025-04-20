@@ -17,7 +17,7 @@
     <meta name="author" content="">
 
 
-   
+
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -25,7 +25,26 @@
 
     <!-- Bootstrap core CSS -->
 
-    
+    <style>
+      .contenido-principal {
+        display: none;
+        /* El contenido está oculto por defecto */
+      }
+
+      .js-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+    </style>
+
     <link href="Assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
@@ -48,19 +67,17 @@ https://templatemo.com/tm-570-chain-app-dev
 
 
     <style>
-  /* Aseguramos que el fondo de los modales también sea escalado */
-  .modal-backdrop {
-    transform: scale(5);
-    transform-origin: center center;
-  }
+      /* Aseguramos que el fondo de los modales también sea escalado */
+      .modal-backdrop {
+        transform: scale(5);
+        transform-origin: center center;
+      }
+    </style>
 
 
-</style>
-
-    
   </head>
 
-  <body class="contenido-principal">
+  <body>
 
     <!-- ***** Preloader Start ***** -->
     <div id="js-preloader" class="js-preloader">
@@ -73,6 +90,7 @@ https://templatemo.com/tm-570-chain-app-dev
         </div>
       </div>
     </div>
-    <!-- ***** Preloader End ***** -->
+    <div class="contenido-principal">
+      <!-- ***** Preloader End ***** -->
 
- <!-- Colores Integrados Oscuros -->
+      <!-- Colores Integrados Oscuros -->
